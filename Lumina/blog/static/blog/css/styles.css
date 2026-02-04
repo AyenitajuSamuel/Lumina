@@ -173,6 +173,11 @@ padding-bottom: 4rem;
 }
 
 .td-layout {
+    display: contents;
+}
+
+/* Tech & Design Grid Container */
+.td-grid-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 2rem;

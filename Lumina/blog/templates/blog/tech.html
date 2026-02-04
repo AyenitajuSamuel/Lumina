@@ -1,9 +1,10 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-    {% for post in posts %}
-        {% if post.tag == 'technology' %}
-            <section class="td-layout">
-                <div class="post-card">
+    <div class="td-grid-wrapper">
+        {% for post in posts %}
+            {% if post.tag == 'technology' %}
+                <section class="td-layout">
+                    <div class="post-card">
                     <a href="#" class="post-image-wrapper">
                         <img src="{{ post.image.url }}" alt="{{ post.title }}" class="post-image" loading="lazy">
                     </a>
@@ -22,7 +23,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        {% endif %}
-    {% endfor %}
+                </section>
+            {% endif %}
+        {% endfor %}
+    </div>
 {% endblock %}
